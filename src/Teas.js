@@ -2,15 +2,15 @@ import React from 'react';
 
 const Teas = ({products}) => {
   return (
-    <div>
-      {products.map(tea => {
-        const {id, name, price, image, description} = tea
+    <div className='products'>
+      {products.map(element => {
+        const {id, name, searchTerm, price, image} = element;
         return(
-          <div key={id}>
+          <div key={id} className='product-card'>
             <img src={image} alt='tea' width='200'/>
             <h3>{name}</h3>
-            <h5>$ {price}</h5>
-            <p>{description}</p>
+            <p>{searchTerm} tea</p>
+            <h5>$ {price} / 100g</h5>
           </div>
         )
       })}
