@@ -4,14 +4,18 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
+import AboutProduct from './pages/AboutProduct';
+import teacup from './teacup.png';
+import Footer from './components/Footer';
 
 
 function App() {
 
   return (
     <Router>
-      <h4 className='shipping'>Free Standard Shipping on Orders Over $50</h4>
       <nav>
+        <img src={teacup} alt='cup' className='tea-cup'/>
+        <p className='logo'>Tea Land</p>
         <Link to="/" className='link'>Home</Link>
         <Link to="/about" className='link'>About</Link>
         <Link to="/contacts" className='link'>Contact Us</Link>
@@ -21,8 +25,10 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contacts" element={<Contacts/>}/>
+        <Route path="/about/:title" element={<AboutProduct/>}/>
       </Routes>
 
+      <Footer/>
     </Router>
   );
 }

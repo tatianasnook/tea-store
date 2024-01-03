@@ -1,46 +1,96 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #444a54;
 }
 .App {
-  font-family: 'Open Sans', sans-serif;
+  
 }
 nav {
-  background-color: #97cb42;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px;
+  background-color: #689026;
+  color: white;
 }
 .link{
   padding: 10px 40px;
   text-decoration: none;
-  color: white;
   text-transform: uppercase;
   cursor: pointer;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
 }
 .link:hover{
-  font-weight: 600;
+  color: white;
+}
+.logo{
+  font-family: 'Lobster', sans-serif;
+  font-size: 30px;
+  display: inline;
+  color: black;
+  margin-right: auto;
+}
+.tea-cup{
+  width: 30px;
+  margin-right: 6px;
+}
+.background {
+  background-image: url('tea-farm.jpg');
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.main-title{
+  font-family: 'Lobster', sans-serif;
+  align-self: center;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 30px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px 15px rgba(255, 255, 255, 0.2);
+  line-height: 60px;
+  letter-spacing: 1px;
 }
 .shipping {
-  background-color: #689026;
-  color: white;
+  color: #689026;
   padding: 10px;
   border: none;
   text-align: center;
   margin: 0;
+  text-decoration: underline;
+}
+.farm-img{
+  width: 100%;
 }
 .products {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .product-card {
-  padding: 2%;
-  flex-grow: 1;
+  padding: 40px 10px;
+  min-width: 300px;
   flex-basis: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.title-link{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.title-link img:hover {
+  transform: scale(1.1);
 }
 p{
   margin: 0;
@@ -50,11 +100,34 @@ p{
   justify-content: center;
 }
 .change{
-  background-color: black;
+  background-color:#689026;
   color: white;
   padding: 10px;
   border: none;
-  margin: 10px;
+  margin: 30px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 3px;
 }
-
+.change:hover{
+  background-color: white;
+  color: black;
+}
+.change:active{
+  font-weight: 700;
+}
+.footer{
+  background-color: #689026;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer img {
+  padding-left: 6px;
+}
+.footer img:hover{
+  transform: scale(1.1);
+}
 
