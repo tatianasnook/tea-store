@@ -8,7 +8,6 @@ import AboutProduct from './pages/AboutProduct';
 import teacup from './teacup.png';
 import Footer from './components/Footer';
 
-
 function App() {
 
   return (
@@ -21,7 +20,7 @@ function App() {
         <Link to="/contacts" className='link'>Contact Us</Link>
       </nav>
 
-      <Routes>
+      <Routes className>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contacts" element={<Contacts/>}/>

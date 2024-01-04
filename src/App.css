@@ -67,6 +67,14 @@ nav {
 }
 .farm-img{
   width: 100%;
+  
+}
+.aboveBtn{
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 40px 0 40px;
+  line-height: 36px;
 }
 .products {
   display: flex;
@@ -116,6 +124,35 @@ p{
 .change:active{
   font-weight: 700;
 }
+
+/* About Product */
+.container{
+  display: flex;
+  padding: 60px;
+  height: 70vh;
+}
+.container img {
+  width: 400px;
+  height: 400px;
+
+}
+.about-product{
+  padding: 0 60px 0 80px;
+}
+.about-product p{
+  line-height: 32px;
+}
+.about-product button {
+  width: 100%;
+  background-color: #f99f46;
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  margin-top: 60px;
+}
+/* Footer */
 .footer{
   background-color: #689026;
   padding: 20px;
