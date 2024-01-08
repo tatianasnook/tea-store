@@ -1,6 +1,6 @@
-import envelope from '../envelope.png';
-import instagram from '../instagram.png';
-import facebook from '../facebook.png';
+import envelope from '../icons/envelope.png';
+import instagram from '../icons/instagram.png';
+import facebook from '../icons/facebook.png';
 
 const Footer = () => {
   return (

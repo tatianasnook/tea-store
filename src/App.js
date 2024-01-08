@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
 import AboutProduct from './pages/AboutProduct';
-import teacup from './teacup.png';
+import teacup from './icons/teacup.png';
 import Footer from './components/Footer';
 
 function App() {

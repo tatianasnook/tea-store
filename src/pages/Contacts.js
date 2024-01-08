@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { shopsData } from '../shopsData';
-import arrow1 from '../arrow1.png';
-import arrow2 from '../arrow2.png';
+import arrow1 from '../icons/arrow1.png';
+import arrow2 from '../icons/arrow2.png';
 
 const Contacts = () => {
   const [shop, setShop] = useState(0);
