@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Online Tea Store website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### By Tatiana Snook
 
-## Available Scripts
+## Technologies Used:
+* HTML
+* CSS
+* JavaScript
+* React
+* GSAP
+* Visual Studio Code
+* Git
 
-In the project directory, you can run:
+## Description
+The Online Tea Store website is a React project designed to facilitate online sales of tea blends for the Tea Land company. Upon opening the app, users are directed to the Home page, featuring a variety of teas sold by Tea Land. Users can filter teas by type, including green, black, herbal, white, or view all teas. Additionally, users can select individual teas to view detailed information and prices, with the option to add items to their cart if they decide to make a purchase.
 
-### `npm start`
+Every page of the website includes a header with the Tea Land logo and three links to the Home page, About page, and Contact Us page. The About page provides insights into the company's history, accompanied by a list of advantages such as premium quality and a diverse selection of tea.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Contact Us page notifies customers that Tea Land not only sells tea online but also has three physical stores that customers can visit.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+The project is deployed and can be accessed at [https://tea-land.netlify.app/](https://tea-land.netlify.app/). Visit the site to explore its features.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup/Installation Requirements
+1. Before you begin, make sure you have the following prerequisites: Node.js and npm installed on your computer.
+2. Clone or download this repository to your local machine. Run in Terminal: `git clone https://github.com/your-username/tea-store.git`
+3. Navigate to the project directory. Run: `cd tea-store`
+4. To run the project on your local machine: `npm install` followed by `npm start`
 
-### `npm run build`
+## Known Issues
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* no known issues at this time.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+MIT License Copyright © Tatiana Snook
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to adjust it further based on your preferences.
