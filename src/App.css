@@ -273,9 +273,7 @@ span {
   transform: scale(1.1);
 }
 @media all and (max-width: 820px){
-  body{
-    background-color: antiquewhite;
-  }
+  
   .link {
     font-size: 16px;
   }
@@ -300,9 +298,7 @@ span {
   }
 }
 @media all and (max-width: 540px){
-  body{
-    background-color:aliceblue;
-  }
+
   .nav-container{
     padding: 10px
   }
