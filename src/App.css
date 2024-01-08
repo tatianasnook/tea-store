@@ -172,6 +172,7 @@ p{
   border: none;
   margin-top: 60px;
   cursor: pointer;
+  color: black;
 }
 .about-product button:hover{
   background-color: #f9922a;
