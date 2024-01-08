@@ -13,11 +13,13 @@ function App() {
   return (
     <Router>
       <nav>
-        <img src={teacup} alt='cup' className='tea-cup'/>
-        <p className='logo'>Tea Land</p>
-        <Link to="/" className='link'>Home</Link>
-        <Link to="/about" className='link'>About</Link>
-        <Link to="/contacts" className='link'>Contact Us</Link>
+        <div className='nav-container'>
+          <img src={teacup} alt='cup' className='tea-cup-logo'/>
+          <p className='logo'>Tea Land</p>
+          <Link to="/" className='link'>Home</Link>
+          <Link to="/about" className='link'>About</Link>
+          <Link to="/contacts" className='link'>Contact Us</Link>
+        </div>
       </nav>
 
       <Routes className>

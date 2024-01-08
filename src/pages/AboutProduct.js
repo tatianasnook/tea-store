@@ -15,7 +15,7 @@ const AboutProduct = () => {
             <div className="about-product">
               <h1>{name} - {searchTerm} tea</h1>
               <p>{description}</p>
-              <h5>$ {price} / 100g</h5>
+              <h4>$ {price} / 100g</h4>
               <button>Add to Cart</button>
             </div>
           </div>
