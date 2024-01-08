@@ -50,14 +50,11 @@ const Contacts = () => {
       <div className="slides">
         <div className='image-container'>
           <img className='arrow one' onClick={previousShop}src={arrow1} alt="arrow"/>
-          <img src={image} alt='tea store' width='600'/>
+          <img className="store" src={image} alt='tea store'/>
           <img className='arrow two' onClick={nextShop} src={arrow2} alt="arrow"/>
         </div>
-        <div className="address-container">
-          <h3>{address}</h3>
-        </div>
+        <h3>{address}</h3>
         <p>Hours: Monday - Saturday 9:00 AM - 7:00 PM </p>
-        
       </div>
     </div>
   )
