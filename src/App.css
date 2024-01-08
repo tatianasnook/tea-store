@@ -280,6 +280,9 @@ span {
   .shipping{
     font-size: 16px;
   }
+  .main-title{
+    margin-top: 170px;
+  }
   .container h1{
     font-size: 22px;
   }
