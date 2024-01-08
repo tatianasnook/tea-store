@@ -11,7 +11,7 @@ const AboutProduct = () => {
          
         return (
           <div key={id} className="container">
-            <img src={image} alt="product" />
+            <img className="product-image" src={image} alt="product" />
             <div className="about-product">
               <h1>{name} - {searchTerm} tea</h1>
               <p>{description}</p>

@@ -68,7 +68,7 @@ nav {
 }
 .main-title{
   font-family: 'Lobster', sans-serif;
-  margin-top: 200px;
+  margin-top: 180px;
   color: black;
   line-height: 60px;
   letter-spacing: 1px;
@@ -140,22 +140,24 @@ p{
 /* About Product */
 .container{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 60px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
   min-height: 70vh;
   max-width: 1300px;
   margin: 0 auto;
+
 }
-.container img {
+.product-image {
   flex: 1;
-  height: 300px;
-  max-width: 400px;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  object-position: center;
 }
 .about-product{
   padding: 0 60px 0 80px;
   flex: 2;
-  min-width: 400px;
 }
 .about-product p{
   line-height: 32px;
@@ -272,8 +274,26 @@ span {
 .footer img:hover{
   transform: scale(1.1);
 }
+@media all and (max-width: 1200px){
+  .about-product{
+  padding: 0 30px;
+}
+  .about-product h1{
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 1000px){
+  .container{
+    padding: 30px 0;
+  }
+  .about-product{
+  padding: 0 20px;
+  }
+  .about-product button{
+     margin-top: 20px;
+  }
+}
 @media all and (max-width: 820px){
-  
   .link {
     font-size: 16px;
   }
@@ -282,6 +302,9 @@ span {
   }
   .main-title{
     margin-top: 170px;
+  }
+  .container{
+    flex-direction: column;
   }
   .container h1{
     font-size: 22px;
@@ -300,7 +323,7 @@ span {
     margin: 10px 0;
   }
 }
-@media all and (max-width: 540px){
+@media all and (max-width: 550px){
 
   .nav-container{
     padding: 10px

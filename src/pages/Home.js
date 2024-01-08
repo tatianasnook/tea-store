@@ -11,9 +11,9 @@ const Home = () => {
   const threeRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(oneRef.current, {fontSize: '3vw', duration: 2, delay: 0})
-    gsap.to(twoRef.current, {fontSize: '3vw', duration: 2, delay: 2})
-    gsap.to(threeRef.current, {fontSize: '3vw', duration: 2, delay: 4})
+    gsap.to(oneRef.current, {fontSize: '3.1vw', duration: 2, delay: 0})
+    gsap.to(twoRef.current, {fontSize: '3.1vw', duration: 2, delay: 2})
+    gsap.to(threeRef.current, {fontSize: '3.1vw', duration: 2, delay: 4})
   }, [])
 
   const filterTea = (searchTerm) => {
