@@ -11,9 +11,35 @@ const Home = () => {
   const threeRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(oneRef.current, {fontSize: '3.5vw', duration: 2, delay: 0})
-    gsap.to(twoRef.current, {fontSize: '3.5vw', duration: 2, delay: 2})
-    gsap.to(threeRef.current, {fontSize: '3.5vw', duration: 2, delay: 4})
+    const mediaQuerySmall = window.matchMedia("(max-width: 699px)");
+    const mediaQueryMedium = window.matchMedia("(min-width: 700px) and (max-width: 1299px)");
+    const mediaQueryLarge = window.matchMedia("(min-width: 1300px)");
+
+    const changeFontSize = () => {
+      if(mediaQuerySmall.matches){
+        gsap.to(oneRef.current, {fontSize: '3.5vw', duration: 2, delay: 0})
+        gsap.to(twoRef.current, {fontSize: '3.5vw', duration: 2, delay: 2})
+        gsap.to(threeRef.current, {fontSize: '3.5vw', duration: 2, delay: 4})
+      } else if (mediaQueryMedium.matches) {
+        gsap.to(oneRef.current, { fontSize: '2.5vw', duration: 2, delay: 0 });
+        gsap.to(twoRef.current, { fontSize: '2.5vw', duration: 2, delay: 2 });
+        gsap.to(threeRef.current, { fontSize: '2.5vw', duration: 2, delay: 4 });
+      } else if (mediaQueryLarge.matches){
+        gsap.to(oneRef.current, {fontSize: '2vw', duration: 2, delay: 0})
+        gsap.to(twoRef.current, {fontSize: '2vw', duration: 2, delay: 2})
+        gsap.to(threeRef.current, {fontSize: '2vw', duration: 2, delay: 4})
+      }
+    }
+    changeFontSize();
+    mediaQuerySmall.addListener(changeFontSize);
+    mediaQueryMedium.addListener(changeFontSize);
+    mediaQueryLarge.addListener(changeFontSize);
+
+    return () => {
+      mediaQuerySmall.removeListener(changeFontSize);
+      mediaQueryMedium.removeListener(changeFontSize);
+      mediaQueryLarge.removeListener(changeFontSize);
+    };
   }, [])
 
   const filterTea = (searchTerm) => {
