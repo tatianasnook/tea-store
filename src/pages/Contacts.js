@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { shopsData } from '../shopsData';
+import { shopsData } from '../data/shopsData';
 import arrow1 from '../icons/arrow1.png';
 import arrow2 from '../icons/arrow2.png';
 

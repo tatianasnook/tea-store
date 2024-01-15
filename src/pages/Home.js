@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { data } from '../data';
+import { data } from '../data/data';
 import { useState, useEffect, useRef } from 'react';
 import Teas from '../components/Teas';
 import Buttons from '../components/Buttons';

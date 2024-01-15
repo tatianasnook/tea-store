@@ -47,7 +47,7 @@ nav {
 
 /* Home page */
 .background {
-  background-image: url('tea-farm.jpg');
+  background-image: url('images/tea-farm.jpg');
   background-size: cover;
   height: 600px;
   display: flex;
