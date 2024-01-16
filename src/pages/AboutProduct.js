@@ -16,7 +16,9 @@ const AboutProduct = () => {
               <h1>{name} - {searchTerm} tea</h1>
               <p>{description}</p>
               <h4>$ {price} / 100g</h4>
-              <button>Add to Cart</button>
+              {/* To Fix Later */}
+              <button>How many?</button>
+              <button className="add-btn">Add to Cart</button>
             </div>
           </div>
         );

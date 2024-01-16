@@ -162,7 +162,7 @@ p{
 .about-product p{
   line-height: 32px;
 }
-.about-product button {
+.add-btn {
   width: 100%;
   background-color: #f99f46;
   padding: 20px 10px;
@@ -174,7 +174,7 @@ p{
   cursor: pointer;
   color: black;
 }
-.about-product button:hover{
+.add-btn:hover{
   background-color: #f9922a;
 }
 
