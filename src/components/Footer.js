@@ -4,7 +4,7 @@ import facebook from '../icons/facebook.png';
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <footer>
       <div className='footer-container'>
         <p>2024 Tea Land. All rights reserved.</p>
         <div>
@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
       </div>
       
-    </div>
+    </footer>
   )
 }
 

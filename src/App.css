@@ -256,6 +256,9 @@ span {
 }
 
 /* Cart page */
+.cart-page{
+  height: calc(100vh - 150px);
+}
 .trash-icon{
   width: 20px;
 }
@@ -263,7 +266,7 @@ span {
 
 
 /* Footer */
-.footer{
+footer{
   background-color: #689026;
   display: flex;
   justify-content: center;
@@ -278,10 +281,10 @@ span {
   justify-content: space-between;
   align-items: center;
 }
-.footer img {
+footer img {
   padding-left: 10px;
 }
-.footer img:hover{
+footer img:hover{
   transform: scale(1.1);
 }
 @media all and (max-width: 1200px){
