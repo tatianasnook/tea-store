@@ -14,9 +14,9 @@ const removeQuantity = () => {
 
   return (
     <div>
-      <button onClick={addQuantity}>+</button>
-      {quantity}
       <button onClick={removeQuantity}>-</button>
+      {quantity}
+      <button onClick={addQuantity}>+</button>
     </div>
   )
 }

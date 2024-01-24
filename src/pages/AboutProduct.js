@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { data } from '../data/data';
-import ChangeQuantity from "../components/Cart/ChangeQuantity";
+import ChangeQuantity from "../components/ChangeQuantity";
 import { useState } from "react";
 import { addItemToCart } from "../redux/cartSlice";
 import { useDispatch } from "react-redux";

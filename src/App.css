@@ -199,9 +199,11 @@ p{
   color: black;
 }
 .add-btn:hover{
-  background-color: #f9922a;
+  background-color: #f58515;
 }
-
+.add-btn:active{
+  background-color: #f99f46;
+}
 /* Contact page */
 
 .contact-container{
