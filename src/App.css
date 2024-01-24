@@ -76,6 +76,30 @@ nav {
 .title{
   font-size: 0px;
 }
+
+.about-section{
+  padding: 20px;
+  max-width: 1300px;
+  margin: 0 auto;;
+  min-height: calc(100vh - 200px);
+}
+.about-section p{
+  line-height: 40px;
+  margin: 40px 0;
+  text-align: justify;
+}
+.wrap {
+   display: flex;
+  }
+.wrap img{
+  width: 500px;
+}
+ul{
+  line-height: 40px;
+}
+
+/* Shop */
+
 .product-container{
   max-width: 1300px;
   margin: 0 auto;
@@ -178,33 +202,8 @@ p{
   background-color: #f9922a;
 }
 
-/* About company section */
-.about-section{
-  padding: 20px;
-  max-width: 1300px;
-  margin: 0 auto;;
-  min-height: calc(100vh - 200px);
-}
-.about-section h1{
-  text-align: center;
-  padding-bottom: 20px;
-}
-.about-section p{
-  line-height: 32px;
-  margin-bottom: 40px;
-}
-.wrap {
-   float: right; 
-   margin: 5px 5px 5px 10px;
-  }
-.wrap img{
-  width: 500px;
-}
-ul{
-  line-height: 32px;
-}
-
 /* Contact page */
+
 .contact-container{
   padding: 20px;
   max-width: 1300px;
@@ -253,6 +252,14 @@ span {
   top: 45%;
   right: 0;
 }
+
+/* Cart page */
+.trash-icon{
+  width: 20px;
+}
+
+
+
 /* Footer */
 .footer{
   background-color: #689026;
@@ -284,6 +291,13 @@ span {
   }
 }
 @media all and (max-width: 1000px){
+  .wrap{
+    flex-wrap: wrap-reverse;
+  }
+  .wrap img {
+    margin: auto;
+    width: 50%;
+  }
   .container{
     padding: 30px 0;
   }
@@ -352,9 +366,13 @@ span {
   .image-container{
     width: 400px;
   }
+  .wrap img {
+    width: 80%;
+  }
   .store{
     width: 400px;
   }
+
   .footer-container{
     padding: 10px;
   }
