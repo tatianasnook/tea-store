@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { shopsData } from '../data/shopsData';
 import arrow1 from '../icons/arrow1.png';
 import arrow2 from '../icons/arrow2.png';
+import ContactForm from '../components/ContactForm';
 
 const Contacts = () => {
   const [shop, setShop] = useState(0);
@@ -56,6 +57,8 @@ const Contacts = () => {
         <h3>{address}</h3>
         <p>Hours: Monday - Saturday 9:00 AM - 7:00 PM </p>
       </div>
+      
+    <ContactForm />
     </div>
   )
 }

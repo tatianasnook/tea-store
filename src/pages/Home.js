@@ -54,7 +54,7 @@ const Home = () => {
 
       <div className='about-section'>
       
-      <p>Welcome to Tea Land, where passion meets perfection in every cup. At Tea Land,
+      <p><span>Welcome to Tea Land</span>, where passion meets perfection in every cup. At Tea Land,
         we take pride in curating the finest selection of premium teas, delivering an exquisite blend of 
         quality and taste to tea enthusiasts around the globe. Our journey began in 2021 with a simple yet
         profound mission – to share the joy of exceptional tea with the world. We believe that tea is not just
