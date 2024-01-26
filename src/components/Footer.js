@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='footer-container'>
-        <p>2024 Tea Land. All rights reserved.</p>
+        <p>&copy;2024 Tea Land. All rights reserved.</p>
         <div>
           <img src={envelope} alt='envelope' width='34' height='42'/>
           <img src={facebook} alt='facebook' width="40"/>

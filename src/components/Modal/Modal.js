@@ -9,7 +9,7 @@ const Modal = ({setIsOpen, children}) => {
     }
     return (
         <div className='modal'>
-            <div className='overLay' onClick={closeModal}>{children}</div>
+            <div className='overlay' onClick={closeModal}>{children}</div>
         </div>
     )
 }

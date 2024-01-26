@@ -24,7 +24,7 @@ const Cart = () => {
         const tea = data.find(item => item.id === teaId);
 
         return(
-          <div key={teaId} className="cart-page">
+          <div key={teaId} >
             <p>{tea.name}</p>
             <p>Quantity: {quantity}</p>
             <p>Price: ${tea.price * quantity}</p>
