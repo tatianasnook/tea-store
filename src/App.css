@@ -336,19 +336,22 @@ form button:active {
 /* Cart page */
 
 .cart-page{
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 160px);
   max-width: 1300px;
   margin: 20px auto;
+  padding: 0 20px;
+}
+.cart-page h3{
+  margin-bottom: 6px;
 }
 .cart-container{
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
-td{
-  /* border: 1px solid black; */
-}
 .box2{
   width: 300px;
+  padding-left: 10px;
 }
 .box3{
   width: 150px;
@@ -470,10 +473,18 @@ footer img:hover{
   .store{
     width: 400px;
   }
-
+  .cart-page{
+    padding: 0 10px;
+  }
+  .box2{
+    width: 200px;
+  }
+  .box3{
+    width: 100px;
+  }
   .footer-container{
     padding: 10px;
-    font-size: 14px;
+
   }
   .footer img{
     padding-left: 5px;

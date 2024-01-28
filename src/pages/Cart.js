@@ -19,7 +19,7 @@ const totalQuantity = cartItems.reduce((total, cartItem) => total + cartItem.qua
     <div className="cart-page"> 
       <h1>Your Cart</h1>
       <h3>TOTAL: ${(totalPrice).toFixed(2)}</h3>
-      <h3>{totalQuantity}</h3>
+      <p>Total quantity: {totalQuantity}</p>
 
       {cartItems.map(cartItem => {
         const {teaId, quantity} = cartItem
