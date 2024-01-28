@@ -7,10 +7,17 @@ import Contacts from './pages/Contacts';
 import AboutProduct from './pages/AboutProduct';
 import Cart from './pages/Cart';
 import teacup from './icons/teacup.png';
+import burger from './icons/burger.png';
 import cart from './icons/cart.png';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 function App() {
+  const [isOpen, setOpen] = useState();
+
+  const closeMobileMenu = () => {
+    setOpen(false);
+  };
 
   return (
     <Router>
@@ -18,12 +25,19 @@ function App() {
         <div className='nav-container'>
           <img src={teacup} alt='cup' className='tea-cup-logo'/>
           <p className='logo'>Tea Land</p>
-          <Link to="/" className='link'>Home</Link>
-          <Link to="/shop" className='link'>Shop</Link>
-          <Link to="/contacts" className='link'>Contact Us</Link>
-          <Link to="/cart" className='link'>
-            <img src={cart} alt='cart'/>
+
+          <div className={`links ${isOpen ? "active" : ""}`}>
+            <Link to="/" className='link' onClick={closeMobileMenu}>Home</Link>
+            <Link to="/shop" className='link' onClick={closeMobileMenu}>Shop</Link>
+            <Link to="/contacts" className='link' onClick={closeMobileMenu}>Contact Us</Link>
+          </div>
+
+          <Link to="/cart">
+            <img src={cart} className="cart" alt='cart'/>
           </Link>
+          <button className='burger-button' onClick={()=> setOpen(!isOpen)}>
+              <img src={burger} alt='menu'/>
+          </button>
         </div>
       </nav>
 

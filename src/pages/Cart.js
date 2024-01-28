@@ -13,10 +13,13 @@ const Cart = () => {
     return total + tea.price * quantity;
   }, 0);
 
+const totalQuantity = cartItems.reduce((total, cartItem) => total + cartItem.quantity, 0);
+
   return (
     <div className="cart-page"> 
-      <p>Your Cart</p>
-      <h3>TOTAL: ${totalPrice}</h3>
+      <h1>Your Cart</h1>
+      <h3>TOTAL: ${(totalPrice).toFixed(2)}</h3>
+      <h3>{totalQuantity}</h3>
 
       {cartItems.map(cartItem => {
         const {teaId, quantity} = cartItem
@@ -24,13 +27,28 @@ const Cart = () => {
         const tea = data.find(item => item.id === teaId);
 
         return(
-          <div key={teaId} >
-            <p>{tea.name}</p>
-            <p>Quantity: {quantity}</p>
-            <p>Price: ${tea.price * quantity}</p>
-            <span onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}> 
+          <div key={teaId} className="cart-container">
+            <table>
+              <tr>
+                <td>
+                  <img src={tea.image} alt='tea' width="100"/>
+                </td>
+                <td className="box2">
+                  <p>{tea.name}</p>
+                </td>
+                <td className="box3">
+                  <p>Quantity: {quantity}</p>
+                </td>
+                <td>
+                  <p>Price: ${(tea.price * quantity).toFixed(2)}</p>
+                </td>
+                <td>
+                  <span onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}> 
               <img className="trash-icon" src={trash} alt='delete'/>
             </span>
+                </td>
+              </tr>
+            </table>
             
           </div>
         )

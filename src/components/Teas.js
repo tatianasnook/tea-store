@@ -10,11 +10,11 @@ const Teas = ({products}) => {
           <div key={id} className='product-card'>
             <Link to={`/about/${element.title}`} className='title-link'>
               <img src={image} alt='tea' width='200'/>
-              <h3 className='title'>{name}</h3>
+              <h3 className='tea-name'>{name}</h3>
             </Link>
             
             <p>{searchTerm} tea</p>
-            <h4>$ {price} / 100g</h4>
+            <h4 className='tea-price'>$ {price} / 100g</h4>
           </div>
         )
       })}

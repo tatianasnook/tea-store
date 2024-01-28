@@ -11,7 +11,7 @@ const AboutProduct = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="product-container">
       {data.filter((item) => item.title === title).map(element => { 
         const {id, name, searchTerm, description, price, image} = element;
          
