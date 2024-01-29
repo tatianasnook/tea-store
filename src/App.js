@@ -11,9 +11,12 @@ import burger from './icons/burger.png';
 import cart from './icons/cart.png';
 import Footer from './components/Footer';
 import { useState } from 'react';
+import { useSelector } from "react-redux";
+import { getTotalQuantity } from './redux/cartSlice';
 
 function App() {
   const [isOpen, setOpen] = useState();
+  const totalQuantity = useSelector(getTotalQuantity);
 
   const closeMobileMenu = () => {
     setOpen(false);
@@ -33,8 +36,12 @@ function App() {
           </div>
 
           <Link to="/cart">
-            <img src={cart} className="cart" alt='cart'/>
+            <div className='cart-box'>
+              <img src={cart} className="cart" alt='cart'/>
+              <span className='total-quantity'>{totalQuantity}</span>
+            </div>
           </Link>
+
           <button className='burger-button' onClick={()=> setOpen(!isOpen)}>
               <img src={burger} alt='menu'/>
           </button>
