@@ -1,7 +1,7 @@
 import Buttons from "../components/Buttons";
 import Teas from "../components/Teas";
 import { data } from '../data/data';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Modal from "../components/Modal/Modal";
 import Content from "../components/Modal/Content";
 
