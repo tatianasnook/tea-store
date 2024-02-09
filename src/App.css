@@ -34,7 +34,7 @@ nav {
   color: white;
 }
 .cart:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .logo{
   font-family: 'Lobster', sans-serif;
@@ -52,10 +52,16 @@ nav {
 }
 .total-quantity{
   position: absolute;
-  top: 14px;
-  right: 7px;
+  top: -8px;
+  right: -24px;
   text-decoration: none;
   color: black;
+  background-color:antiquewhite;
+  padding: 1px 7px;
+  border-radius: 50%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 .burger-button{
   display: none;

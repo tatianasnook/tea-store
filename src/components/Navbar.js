@@ -30,7 +30,7 @@ const Navbar = () => {
           <Link to="/cart">
             <div className='cart-box'>
               <img src={cart} className="cart" alt='cart'/>
-              <span className='total-quantity'>{totalQuantity}</span>
+              {totalQuantity > 0 && <span className='total-quantity'>{totalQuantity}</span>}
             </div>
           </Link>
 

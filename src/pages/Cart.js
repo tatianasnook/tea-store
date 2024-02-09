@@ -7,7 +7,7 @@ import trash from '../icons/trash.png';
 const Cart = () => {
   const cartItems = useSelector(getCartItems);
   const dispatch = useDispatch();
-  const totalQuantity=useSelector(getTotalQuantity);
+  const totalQuantity = useSelector(getTotalQuantity);
   
   const totalPrice = cartItems.reduce((total, cartItem) => {
     const { teaId, quantity } = cartItem;
