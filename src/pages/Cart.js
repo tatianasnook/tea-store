@@ -16,8 +16,9 @@ const Cart = () => {
   }, 0);
 
   return (
-    <div className="cart-page"> 
-      <h1>Your Cart</h1>
+    <div className="cart-page">
+      <div>
+        <h1>Your Cart</h1>
       <h3>TOTAL: ${(totalPrice).toFixed(2)}</h3>
       <p>Total quantity: {totalQuantity}</p>
 
@@ -53,6 +54,7 @@ const Cart = () => {
           </div>
         )
       })}
+      </div>
     </div>
   )
 }
